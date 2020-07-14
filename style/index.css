@@ -131,7 +131,33 @@ footer button {
 
 @media(max-width:800px){
 /* looks fine but image is squished */
+header{
+    align-items:center;
 }
+header nav{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+header nav a{
+    margin:10%;
+}
+.top {
+    flex-direction:column;
+    align-items:center;
+}
+.top img{
+    width:80%;
+}
+.top .introContainer{
+    width:100%;
+}
+
+.bottom .album{
+    width:50%;
+}
+}
+
 
 @media(max-width:500px){
     header{
