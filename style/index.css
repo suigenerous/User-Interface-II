@@ -17,7 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    border: solid grey 1px;
+    /* border: solid grey 1px; */
     max-width: 100%;
     box-sizing:border-box;
 }
@@ -127,4 +127,37 @@ footer p {
 footer button {
     margin:1%;
     font-size:1rem;
+}
+
+@media(max-width:800px){
+/* looks fine but image is squished */
+}
+
+@media(max-width:500px){
+    header{
+        align-items:center;
+    }
+    header nav{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    header nav a{
+        margin:10%;
+    }
+    .top {
+        flex-direction:column;
+        align-items:center;
+    }
+    .top img{
+        width:80%;
+    }
+    .top .introContainer{
+        width:100%;
+    }
+
+    .bottom .album{
+        width:50%;
+    }
+
 }
